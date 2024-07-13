@@ -1,0 +1,25 @@
+﻿<Page x:Class="WorkbenchToolkit.Assets.View.GamePathView.setting"
+      xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WorkbenchToolkit.Assets.View.GamePathView"
+      mc:Ignorable="d"
+      Title="setting">
+
+    <DockPanel>
+        <Border>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="语言" Foreground="Black" FontFamily="{StaticResource alimamashuheiti}" FontSize="20"/>
+                <TextBlock Grid.Row="1" Text="主题皮肤" Foreground="Black" FontFamily="{StaticResource alimamashuheiti}" FontSize="20"/>
+            </Grid>
+        </Border>
+    </DockPanel>
+</Page>

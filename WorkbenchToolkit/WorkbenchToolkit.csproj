@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\fonts\阿里妈妈数黑体.ttf" />
+    <None Remove="Assets\View\背景.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iNKORE.UI.WPF" Version="1.2.7.1" />
+    <PackageReference Include="iNKORE.UI.WPF.Modern" Version="0.9.30" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="QS.WPF.Toolkit.GlobalizationSourceGenerator" Version="1.0.3" />
+    <PackageReference Include="SharpVectors" Version="1.8.4" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.1" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+    <PackageReference Include="System.Management.Automation" Version="7.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\fonts\阿里妈妈数黑体.ttf" />
+    <Resource Include="Assets\Image\background.png" />
+  </ItemGroup>
+
+</Project>

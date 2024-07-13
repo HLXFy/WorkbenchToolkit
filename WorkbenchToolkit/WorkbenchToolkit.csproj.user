@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Assets\View\setting.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Assets\View\GameTool.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Styles\Style.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\View\GameTool\GameRuntime.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\View\GameTool\MinecraftJava.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\View\GameTool\Sinicization.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\View\setting.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\View\GameTool.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\fonts\fonts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

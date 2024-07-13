@@ -1,0 +1,6 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FontFamily x:Key="alimamashuheiti">
+        /WorkbenchToolkit;Component/Assets/fonts/阿里妈妈数黑体.ttf#阿里妈妈数黑体
+    </FontFamily>
+</ResourceDictionary>

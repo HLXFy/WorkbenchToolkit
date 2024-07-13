@@ -1,0 +1,93 @@
+﻿<Window
+    x:Class="WorkbenchToolkit.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ikw="http://schemas.inkore.net/lib/ui/wpf"
+    xmlns:local="clr-namespace:WorkbenchToolkit"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+    xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
+    x:Name="window"
+    Title="Workbench Toolkit"
+    AllowsTransparency="True"
+    Background="{x:Null}"
+    MouseLeftButtonDown="window_MouseLeftButtonDown"
+    MouseLeftButtonUp="window_MouseLeftButtonUp"
+    MouseMove="window_MouseMove"
+    ResizeMode="NoResize"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <ui:ClippingBorder Background="White" CornerRadius="8">
+        <Grid>
+            <Grid Margin="0,3.5,3.5,0" VerticalAlignment="Top">
+                <Button
+                    x:Name="btnMinimize"
+                    Margin="0,0,57,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Content="{DynamicResource Minimize}"
+                    Click="btnMinimize_Click"
+                    Cursor="Hand"
+                    Style="{DynamicResource IconButtonsStyle}" />
+                <Button
+                    x:Name="btnMaximize"
+                    Margin="0,0,30,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Content="{DynamicResource Maximize}"
+                    Click="btnMaximize_Click"
+                    Cursor="Hand"
+                    Style="{DynamicResource IconButtonsStyle}" />
+                <Button
+                    x:Name="btnClose"
+                    Margin="0,0,3,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Click="Closs_btn_Click"
+                    Content="{DynamicResource Close}"
+                    Style="{StaticResource IconButtonsStyle}"
+                    Tag="IsCloseButton" />
+            </Grid>
+            <TextBlock
+                Margin="10,6,0,0"
+                FontFamily="{StaticResource alimamashuheiti}"
+                FontSize="16"
+                Text="Workbench Toolkit" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <ui:NavigationView
+                Margin="0,32,0,0"  OpenPaneLength="180"
+                Background="Transparent"
+                IsBackButtonVisible="Collapsed"
+                IsPaneOpen="False"
+                SelectionChanged="NavigationView_SelectionChanged">
+                <ui:NavigationView.MenuItems>
+                    <ui:NavigationViewItem
+                        Content="硬件情况"
+                        FontFamily="{StaticResource alimamashuheiti}"
+                        IsSelected="True"
+                        Tag="HardwareDetails">
+                        <ui:NavigationViewItem.Icon>
+                            <ui:FontIcon Margin="-7,0,0,0" Glyph="&#xE977;" />
+                        </ui:NavigationViewItem.Icon>
+                    </ui:NavigationViewItem>
+                    <ui:NavigationViewItem
+                        Content="游戏补丁"
+                        FontFamily="{StaticResource alimamashuheiti}"
+                        Tag="GamePatch">
+                        <ui:NavigationViewItem.Icon>
+                            <ui:FontIcon Margin="-7,0,0,0" Glyph="&#xEBD3;" />
+                        </ui:NavigationViewItem.Icon>
+                    </ui:NavigationViewItem>
+                    <ui:NavigationViewItem Content="设置" Tag="setting">
+                        <ui:NavigationViewItem.Icon>
+                            <ui:FontIcon Margin="-7,0,0,0" Glyph="&#xE713;" />
+                        </ui:NavigationViewItem.Icon>
+                    </ui:NavigationViewItem>
+                </ui:NavigationView.MenuItems>
+                <ui:ClippingBorder CornerRadius="8">
+                    <ui:Frame x:Name="MainFrame" Background="White" />
+                </ui:ClippingBorder>
+            </ui:NavigationView>
+        </Grid>
+    </ui:ClippingBorder>
+</Window>
